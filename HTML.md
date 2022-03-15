@@ -1,5 +1,5 @@
 # HTML
------
+
 ## HTML 기본 구조
 
     <!DOCTYPE html>
@@ -29,7 +29,11 @@
 - 태그와 속성은 대소문자 구분 없음
 - 속성값에 불필요한 공백 문자는 HTML5 표준에 어긋남
 
-## 예제 1
+<br>
+
+## 예제
+
+### 1. 제목  
 ```
 <!DOCTYPE html>
 <html>
@@ -45,7 +49,7 @@
 </html>
 ```
 
-## 예제 2 - 툴팁
+### 2. 툴팁
 ```
 <!DOCTYPE html>
 <html>
@@ -59,7 +63,7 @@
 </html>
 ```
 
-## 예제 3 - <br> 새로운 줄, <p> 단락 나누기
+### 3. 새로운 줄 &lt;br&gt;, 단락 나누기 &lt;p&gt;
 ```
 <!DOCTYPE html>
 <html>
@@ -74,7 +78,7 @@
 </html>
 ```
 
-## 예제 4 - <hr> 수평선 긋기
+### 4. 수평선 긋기 &lt;hr&gt; 
 ```
 <!DOCTYPE html>
 <html>
@@ -89,7 +93,7 @@
 </html>
 ```
 
-## 예제 5 - 특수 문자, 기호, 심볼
+### 5. 특수 문자, 기호, 심볼
 ```
 <!DOCTYPE html>
 <html>
@@ -105,7 +109,7 @@
 </html>
 ```
 
-## 예제 6 - 텍스트 꾸미기
+### 6. 텍스트 꾸미기
 ```
 <!DOCTYPE html>
 <html>
@@ -125,6 +129,91 @@
         <sup>윗첨자</sup><br>
         <sub>아래첨자</sub><br>
         <mark>형광팬</mark><br>
+        <span style="color:red">빨간 글자</span><br>
+        <pre>적는 그대로 보이는 태그</pre><br>
     </body>
 </html>
 ```
+<br>
+
+## 블록 태그와 인라인 태그
+- 블록태그
+    - 항상 새 라인에서 시작하여 출력
+    - 양 옆에 다른 콘텐트를 배치하지 않고 한 라인 독점 사용
+```
+<p>, <h1>, <div>, <ul>
+```
+
+- 인라인 태그
+    - 블록 속에 삽입되어 블록의 일부로 출력
+
+<br>
+
+---
+
+
+## 메타 데이터 삽입
+- 데이터를 설명하는 데이터
+    - 사진: 장소, 시간
+    - 오디오: 재생시간, 채널 수
+    - 이미지: 이미지 폭, 높이, 해상도
+- HTML 페이지에 대한 메타 태그
+    - &lt;base&gt;,&lt;link&gt;,&lt;script&gt;,&lt;style&gt;&lt;title&gt;,&lt;meta&gt;
+
+- 메타 태그들은 &lt;head&gt; 태그안에 저장
+    - &lt;script&gt;는 body에도 사용 가능
+
+<br>
+
+## &lt;base&gt; 태그
+
+- 사용 예: href 를 전역변수처럼 사용
+
+```
+<head>
+    <base href="http://localhost/">
+</head>
+```
+
+```
+<a href="math.html">수학</a>
+<a href="science.html>과학</a>
+```
+<br>
+
+## &lt;link&gt; 태그와 &lt;meta&gt; 태그
+
+- &lt;link&gt; 태그는 외부 자원 연결에 사용
+```
+<head>
+    <link type="text/css" rel="stylesheet" href="mystyle.css">
+</head>
+```
+
+- &lt;meta&gt; 태그는 다양한 메타 데이터 표현
+    - 웹 페이지의 저작권, 문자 인코딩 방식 내용 등
+
+<br>
+
+## &lt;img&gt; 태그
+
+- &lt;image&gt; 태그의 src 속성에 이미지 파일의 주소 지정
+```
+<img    src="이미지 파일의 URL"     -> 필수 속성
+        alt="문자열"               -> 이미지를 출력할 수 없는 경우 문자열로 대체, 필수 속성
+        width="이미지 폭"
+        height="이미지 높이">
+```
+
+<br>
+
+## 리스트 만들기
+
+- 3가지 종류의 리스트
+    - 순서 있는 리스트 &lt;ol&gt; &lt;/ol&gt;   -> A. B. ...
+    - 순서 없는 리스트 &lt;ul&gt; &lt;/ul&gt;   -> 마커
+    - 정의 리스트 &lt;dl&gt; &lt;/dl&gt;
+
+- 리스트 아이템
+    - &lt;li&gt; ... &lt;li&gt;
+    - &lt;/li&gt; 생략 가능
