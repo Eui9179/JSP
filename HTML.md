@@ -22,8 +22,8 @@
 
 *  HTML 태그 구성
 ```
-    <img src="test.jpg" width="100" height="50" alt="test">
-    <태그이름 속성이름=속성값 속성=속성값 ...>" 
+<img src="test.jpg" width="100" height="50" alt="test">
+<태그이름 속성이름=속성값 속성=속성값 ...>" 
 ```
 
 - 태그와 속성은 대소문자 구분 없음
