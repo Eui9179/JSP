@@ -29,4 +29,102 @@
 - 태그와 속성은 대소문자 구분 없음
 - 속성값에 불필요한 공백 문자는 HTML5 표준에 어긋남
 
-## 예제
+## 예제 1
+```
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>첫 타이틀</title>
+    </head>
+    <body>
+        <h1> 큰글자 </h1>
+        <h2> 살짝 큰 글자 </h2>
+        ...
+        <h6> 가장 작은 글자 </h6>
+    </body>
+</html>
+```
+
+## 예제 2 - 툴팁
+```
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>툴팁 달기</title>
+    </head>
+    <body>
+        <h1 title="큰글자 툴팁"> 
+            큰글자 </h1>
+    </body>
+</html>
+```
+
+## 예제 3 - <br> 새로운 줄, <p> 단락 나누기
+```
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>단락 나누기</title>
+    </head>
+    <body>
+        <h3> 단락 나누기 </h3>
+        <p>단락 1<br>단락1 내용</p>
+        <p>단락 2</p>
+    </body>
+</html>
+```
+
+## 예제 4 - <hr> 수평선 긋기
+```
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>수평선 긋기</title>
+    </head>
+    <body>
+        <h3> 수평선 긋기</h3>
+        <hr>
+        <p> &lt/hr&gt;로 태그 표시</p>
+    </body>
+</html>
+```
+
+## 예제 5 - 특수 문자, 기호, 심볼
+```
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>문자, 기호, 심볼</title>
+    </head>
+    <body>
+        <h3>기호 넣기</h3>
+        <hr>
+        띄어쓰기 &nbsp;<br>
+        따옴표 &quuot;<br>
+    </body>
+</html>
+```
+
+## 예제 6 - 텍스트 꾸미기
+```
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>텍스트 꾸미기</title>
+    </head>
+    <body>
+        <h3>텍스트 꾸미기</h3>
+        <hr>
+        <b>진하게</b><br>
+        <strong>중요한</strong><br>
+        <em>강조</em><br>
+        <i>이탤릭으로 강조</i><br>
+        <small>한 단계 작은 문자</small><br>
+        <del>삭제</del><br>
+        <ins>추가</ins><br>
+        <sup>윗첨자</sup><br>
+        <sub>아래첨자</sub><br>
+        <mark>형광팬</mark><br>
+    </body>
+</html>
+```
