@@ -121,4 +121,5 @@ html, body { margin: 0; padding: 0; height: 100%; }
     - 폼 데이터를 웹 서버로 전송하는 형식
     - 대표적인 전송 방식 : GET, POST 
 <br>
-<img src="static/form.png">
+<br>
+<img src="media/form.png">
