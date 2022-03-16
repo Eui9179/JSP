@@ -52,3 +52,53 @@
 	<img src=“naver.png” alt=“네이버사이트”>
 </a>
 ```
+
+## 다운로드 파일 링크 만들기 &lt; ... download>
+```
+<!DOCTYPE html>
+<html>
+<head><title>파일 다운로드</title></head>
+<body>
+<hr>
+<ul>
+	<li><a href="media/test.png" download>이미지 다운로드</a>
+</ul>
+</body>
+</html>
+```
+
+## 인라인 프레임 만들기, &lt;iframe>
+
+- HTML 페이지 내에 HTML 페이지 삽입
+```
+<!DOCTYPE html>
+<html>
+<head><title>iframe을 가지는 웹 페이지</title>
+</head>
+<body>
+    <h3>2 개의 &lt;iframe&gt;을 가집니다.</h3>
+    <hr>
+    <iframe src="iframe1.html" width="200" height="150">
+    </iframe>
+    <iframe src="iframe2.html" width="200" height="100">
+    </iframe>
+</body>
+</html>
+```
+
+## 미디어 삽입 &lt;audio>, &lt;video>
+```
+<!DOCTYPE html>
+<html>
+<head><title>비디오 삽입</title></head>
+<body>
+<h3>비디오 삽입</h3>
+<hr>
+<video src="media/test.mp4" 
+		   width="320" height="240" 
+			controls autoplay>
+		브라우저가 video 태그를 지원하지 않습니다.
+</video>
+</body>
+</html>
+```
