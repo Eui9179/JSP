@@ -122,4 +122,4 @@ html, body { margin: 0; padding: 0; height: 100%; }
     - 대표적인 전송 방식 : GET, POST 
 <br>
 <br>
-<img src="media/form.png">
+<img src="image/form.png">
