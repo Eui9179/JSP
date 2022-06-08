@@ -1,24 +1,34 @@
 package dto;
+
 import java.io.Serializable;
 
 public class Product implements Serializable{
-	private static final long serialVersionUID = -4274700572038677000L;
+	private static final long seralVersionUID = -4274700572038677000L;
 	
 	private String productId;
 	private String pname;
-	private Integer unitPrice;
+	private int unitPrice;
 	private String description;
 	private String manufacturer;
 	private String category;
 	private long unitsInStock;
 	private String condition;
+	private String filename;
+	private int quantity;
 	
+	public String getFilename() {
+		return filename;
+	}
+
+	public void setFilename(String filename) {
+		this.filename = filename;
+	}
+
 	public Product() {
 		super();
 	}
-
+	
 	public Product(String productId, String pname, Integer unitPrice) {
-		super();
 		this.productId = productId;
 		this.pname = pname;
 		this.unitPrice = unitPrice;
@@ -40,11 +50,11 @@ public class Product implements Serializable{
 		this.pname = pname;
 	}
 
-	public Integer getUnitPrice() {
+	public int getUnitPrice() {
 		return unitPrice;
 	}
 
-	public void setUnitPrice(Integer unitPrice) {
+	public void setUnitPrice(int unitPrice) {
 		this.unitPrice = unitPrice;
 	}
 
@@ -62,6 +72,14 @@ public class Product implements Serializable{
 
 	public void setManufacturer(String manufacturer) {
 		this.manufacturer = manufacturer;
+	}
+
+	public int getQuantity() {
+		return quantity;
+	}
+
+	public void setQuantity(int quantity) {
+		this.quantity = quantity;
 	}
 
 	public String getCategory() {
@@ -88,8 +106,9 @@ public class Product implements Serializable{
 		this.condition = condition;
 	}
 
-	public static long getSerialversionuid() {
-		return serialVersionUID;
-	}	
+	public static long getSeralversionuid() {
+		return seralVersionUID;
+	}
+	
 	
 }
