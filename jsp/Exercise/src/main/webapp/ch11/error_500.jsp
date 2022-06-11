@@ -7,6 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<p>인증 실패했습니다.
+<h2>500error</h2>
+<%@include file="exception.jsp" %>
 </body>
 </html>

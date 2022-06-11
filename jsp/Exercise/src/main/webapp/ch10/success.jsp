@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<p> 인증 성공
+<h2>인증을 성공했습니다.</h2>
 </body>
 </html>

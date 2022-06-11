@@ -13,5 +13,12 @@
 		<p>이메일: <input type="text" name="email">
 		<p><input type="submit" value="전송">
 	</form>
+	<table border="1">
+	<tr>
+		<td>안녕</td>
+		<td>안녕</td>
+		<td>안녕</td>
+	</tr>
+	</table>
 </body>
 </html>

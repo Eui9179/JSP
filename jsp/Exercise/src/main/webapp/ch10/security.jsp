@@ -4,17 +4,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>354 연습문제</title>
+<title>Insert title here</title>
 </head>
 <body>
-<%-- 시험 문제 --%>
-	<p> 354 연습문제
-	<%
-		if(request.isUserInRole("admin")){
-			response.sendRedirect("success.jsp");
-		} else if(request.isUserInRole("role1")){
-			response.sendRedirect("success.jsp");
-		}
-	%>
+<% response.sendRedirect("success.jsp"); %>
 </body>
 </html>

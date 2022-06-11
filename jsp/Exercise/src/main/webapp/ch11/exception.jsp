@@ -4,12 +4,12 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Exception</title>
 </head>
 <body>
-	<form name="loginForm" action="j_security_check" method="post">
-		<p>사용자명: <input type="text" name="j_username">
-		<p>비밀번호: <input type="password" name="j_password">
+	<form action="exception_process.jsp">
+		<p>아이디: <input type="text" name="id">
+		<p>비밀번호: <input type="password" name="password">
 		<p><input type="submit" value="전송">
 	</form>
 </body>

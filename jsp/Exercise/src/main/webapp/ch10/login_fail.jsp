@@ -4,10 +4,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>JSP</title>
+<title>Insert title here</title>
 </head>
 <body>
-	<h1>Hello! JSP Programming</h1>
-	<a>Welcome to JSP</a>
+<h2>인증을 실패했습니다.</h2>
 </body>
 </html>
