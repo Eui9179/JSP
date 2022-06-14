@@ -7,7 +7,15 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h2>오류 발생:요청 파라미터 값이 없습니다.</h2>
-	<%@include file="exception.jsp" %>
+	<%
+		Cookie[] cookies = request.getCookies();
+	
+		for(int i=0; i<cookies.length; i++){
+			cookies[i].setMaxAge(0);
+			response.addCookie(cookies[i]);
+		}
+		response.sendRedirect("cookie.jsp");
+	%>
+
 </body>
 </html>

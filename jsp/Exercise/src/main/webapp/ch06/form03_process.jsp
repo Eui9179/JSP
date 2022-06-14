@@ -16,7 +16,5 @@
 		out.print(paramValues[i]+" ");
 	}
 %>
-
-
 </body>
 </html>

@@ -7,7 +7,10 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h2>오류 발생:요청 파라미터 값이 없습니다.</h2>
-	<%@include file="exception.jsp" %>
+<%
+	session.invalidate();
+	response.sendRedirect("session.jsp");
+%>
+
 </body>
 </html>

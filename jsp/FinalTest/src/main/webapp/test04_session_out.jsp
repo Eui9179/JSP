@@ -4,10 +4,12 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Session Out</title>
 </head>
 <body>
-	<h2>오류 발생:요청 파라미터 값이 없습니다.</h2>
-	<%@include file="exception.jsp" %>
+	<%
+		session.invalidate();
+		response.sendRedirect("test04.jsp");
+	%>
 </body>
 </html>
