@@ -1,2 +1,2 @@
 # JSP
-class summary
+Lecture summary
